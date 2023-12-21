@@ -1,0 +1,32 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    gap: 5px;
+
+    height: 65px;
+
+    border-radius: var(--br--12);
+    transition: 1s;
+
+    //
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+
+    &.hide {
+        display: none;
+    }
+
+    &--primary {
+        background-color: var(--primary);
+
+        color: var(--white);
+
+        &:hover {
+            background-color: var(--primary-light);
+        }
+    }
+}

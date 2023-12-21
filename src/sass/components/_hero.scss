@@ -1,0 +1,36 @@
+.hero {
+    padding: 200px 0 50px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 70px;
+
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+
+        h1 {
+            font-size: 52px;
+        }
+
+        p {
+            color: var(--gray-600);
+        }
+    }
+
+    &-wrap__action {
+        margin-top: 25px;
+    }
+
+    &-bg {
+        display: flex;
+
+        flex-shrink: 0;
+
+        width: 100%;
+    }
+}

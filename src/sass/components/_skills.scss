@@ -1,0 +1,110 @@
+.skills {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    gap: 25px;
+
+    &-list {
+        position: relative;
+
+        margin-top: 25px;
+
+        width: 100%;
+
+        .slick-arrow {
+            display: none !important;
+        }
+
+        .slick-dots {
+            position: absolute;
+
+            bottom: -35px;
+        }
+
+        .slick-dots li button:before {
+            width: 12px;
+            height: 12px;
+            
+            background-color: var(--black-600);
+        }
+
+        .slick-dots li.slick-active button:before {
+            background-color: var(--gray-500);
+        }
+
+        .slick-list {
+            padding: 0 10px !important;
+        }
+
+        .slick-slide {
+            padding: 3px !important;
+        }
+    }
+
+    &-list__item {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        padding: 25px 18px;
+
+        height: 315px;
+
+        border-radius: var(--br--20);
+        border: 0.873px solid var(--gray-500);
+
+        background-color: var(--white);
+    }
+
+    &-list__info {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        span {
+            display: flex;
+            margin-top: 15px;
+
+            font-size: 22px;
+        }
+
+        p {
+            margin-top: 5px;
+
+            font-weight: 300;
+            color: var(--gray-600);
+        }
+    }
+
+    &-list__path {
+        display: flex;
+        align-items: center;
+
+        gap: 5px;
+
+        span {
+            color: var(--primary);
+        }
+
+        svg {
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: var(--primary);
+            stroke-width: 1.5;
+            border-radius: var(--br--3);
+        }
+    }
+}
+
+// @include rmin($tablet) {
+//     .skills {
+//         &-list__carousel {
+//             display: none;
+//         }
+//     }
+// }

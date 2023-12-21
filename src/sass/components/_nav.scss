@@ -1,0 +1,63 @@
+.nav {
+    &-wrap__burger {
+        position: relative;
+
+        width: 30px;
+        height: 23px;
+
+        &::before,
+        &::after,
+        span {
+            position: absolute;
+            content: "";
+
+            width: 100%;
+            height: 2.8px;
+
+            right: 0;
+
+            background-color: var(--black);
+            transition: 0.3s;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        span {
+            top: 45%;
+        }
+
+        &.active {
+            &::before,
+            &::after {
+                bottom: 0;
+                left: 0;
+                top: 15px;
+                right: unset;
+
+                width: 100%;
+            }
+
+            &::before {
+                transform: rotate(-45deg);
+            }
+
+            &::after {
+                transform: rotate(45deg);
+            }
+
+            span {
+                scale: 0;
+            }
+        }
+    }
+
+    &-wrap__list {
+        display: none;
+    }
+}

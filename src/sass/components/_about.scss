@@ -1,0 +1,32 @@
+.about {
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            color: var(--gray-600);
+        }
+    }
+
+    &-info .btn {
+        margin-top: 25px;
+    }
+
+    &-img img {
+        display: flex;
+        flex-shrink: 0;
+
+        width: 100%;
+    }
+}

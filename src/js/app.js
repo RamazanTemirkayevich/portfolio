@@ -1,3 +1,5 @@
-import sayHello from './lib/sayHello';
+import 'slick-carousel'
 
-sayHello();
+import Carousel from './lib/Carousel';
+
+Carousel();
